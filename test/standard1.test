@@ -1,0 +1,17 @@
+'use strict';
+
+function normalize(arr) {
+var x;
+return x=arr.map(function(name){
+var y=name.toLowerCase();
+var z=y.charAt(0).toUpperCase()+y.slice(1);
+return z;});
+}
+
+// 测试:
+if (normalize(['adam', 'LISA', 'barT']).toString() === ['Adam', 'Lisa', 'Bart'].toString()) {
+    console.log('测试通过!');
+}
+else {
+    console.log('测试失败!');
+}
