@@ -1,0 +1,36 @@
+'use strict';
+var list = document.getElementById('test-list');
+var arr = list.children;
+var textArr = [];
+for (let i=0; i<arr.length; i++) {
+    textArr[i] = arr[i].innerHTML;
+}
+textArr.sort();
+list.innerHTML = '';
+for (let i = 0; i < textArr.length; i++) {
+    var li = document.createElement('li');
+    li.className = 'lang';
+    li.innerText = textArr[i];
+    list.appendChild(li);
+}
+// 测试:
+;(function () {
+    var
+        arr, i,
+        t = document.getElementById('test-list');
+    if (t && t.children && t.children.length === 5) {
+        arr = [];
+        for (i=0; i<t.children.length; i++) {
+            arr.push(t.children[i].innerText);
+        }
+        if (arr.toString() === ['Haskell', 'JavaScript', 'Python', 'Ruby', 'Scheme'].toString()) {
+            console.log('测试通过!');
+        }
+        else {
+            console.log('测试失败: ' + arr.toString());
+        }
+    }
+    else {
+        console.log('测试失败!');
+    }
+})();
