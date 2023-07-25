@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        function namespace(oNamespace, sPackage) {
+    let tmpWrap = oNamespace;
+    sPackage.split('.').forEach(item => {
+        tmpWrap = tmpWrap[item] = Object.assign({}, tmpWrap[item]);
+    });
+    return oNamespace;
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function fibonacci(n) {
+    if(n<=2){return 1;}
+    else{return fibonacci(n-1)+fibonacci(n-2)}
+}
+    </script>
+</body>
+
+</html>
