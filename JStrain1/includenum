@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function containsNumber(str) {
+            var arr=Array.from(str);
+            var bool=false;
+            for(let i=0;i<arr.length;i++){
+                for(let v=0;v<10;v++){
+                    if (v.toString()===arr[i]){
+                        return bool=true;
+                    }                
+                }            
+            }return bool;
+}
+    </script>
+</body>
+
+</html>

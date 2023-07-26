@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function base10(str) {
+            var arr=Array.from(str).reverse();
+            var btod=0;
+            for (let i=0;i<arr.length;i++){
+                btod=btod+Number(arr[i])*Math.pow(2,i);
+            }
+            return btod;
+}
+    </script>
+</body>
+
+</html>
