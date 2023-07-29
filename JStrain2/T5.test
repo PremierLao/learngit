@@ -1,0 +1,12 @@
+function valueAtBit(num, bit) {
+    let y=[];
+    let x=num;z=0;
+    while(true){
+        if(x===0){
+            return y[bit-1];
+        }
+        z=x%2;
+        y=y.concat([z]);
+        x=Math.floor(x/2);
+    }
+}

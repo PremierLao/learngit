@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function callIt(fn) {
+   let r = [...arguments];
+   let s = r.slice(1);
+    return fn.apply(null,s);
+}
+    </script>
+</body>
+
+</html>

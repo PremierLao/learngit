@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        function functionFunction(str) {
+  // 字符串拼接函数
+  function strAdd() {
+    return Array.prototype.join.call(arguments, ', ')
+  }
+
+  // 柯里化工具函数，argLength为目标函数的参数的长度
+  function curry(fn, argLength) {
+    return function curried(...args) {
+      if (args.length >= argLength) {
+        return fn.apply(this, args)
+      } else {
+        return function(...args2) {
+          return curried.apply(this, args.concat(args2))
+        }
+      }
+    }
+  }
+
+  // 将字符串函数柯里化，目标参数长度为2（也可以是其他长度）
+  // 并进行初次调用
+  return curry(strAdd, 2)(str)
+}
+    </script>
+</body>
+
+</html>

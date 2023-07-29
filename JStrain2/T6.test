@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function convertToBinary(num) {
+           let x=[];y=0;
+           while(true){
+            y=num%2;
+            x=x.concat([y]);
+            num=Math.floor(num/2);
+            if(num===0){
+                if(x.length<8){
+                    let z=8-x.length;
+                    for(let i=0;i<z;i++){
+                        x.push(0);
+                    }
+                }
+                x=x.reverse();
+                for(let j=0;j<x.length;j++){                    
+                    var out=x.join('');
+                }
+                return out;
+            }
+           } 
+}
+    </script>
+</body>
+
+</html>
