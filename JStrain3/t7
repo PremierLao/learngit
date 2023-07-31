@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+const _getUniqueNums = (start, end, n) => {
+  // set 去重
+  const con = new Set()
+  // 生成 n 个不重复的随机数
+  while (con.size < n) {
+    // Math.random 生成 [0, 1) 的数字，可以将 结果 * (end - start) + start 扩大区间， + 1 是为了取到 end
+    con.add(Math.floor(Math.random() * (end - start + 1) + start))
+  }
+  return [...con]
+}
+
+        </script>
+    </body>
+</html>
