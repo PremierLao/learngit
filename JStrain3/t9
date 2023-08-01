@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+    </head>
+    <body>
+    	
+        <script type="text/javascript">
+            const _delete = (array,index) => {
+                // 补全代码
+                var newarr=[...array];
+                newarr.splice(index,1)
+                return newarr;
+            }
+        </script>
+    </body>
+</html>
