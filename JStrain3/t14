@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const _getParams = (url) => {
+                // 补全代码
+                var ul=url.split('?')[1]
+                ul=ul.split('&')//[id=1,salas=1000]
+                var obj={}
+                ul.map(item=>{
+                    let[key,value]=item.split("=")
+                    obj[key]=value
+                })
+                return obj;
+            }
+        </script>
+    </body>
+</html>

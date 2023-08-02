@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2></h2>
+
+        <script>
+        var person = {
+                    level: '2',
+                    name: '小丽',
+                    registTime: '2021-11-01',}
+        h2=document.querySelector('h2')
+        var date1=new Date();
+        var date2=new Date(person.registTime)
+        function timer0(a,b){
+            let timer1=Math.floor((a-b)/(60*60*24*1000))
+            return timer1;
+        }
+        h2.innerText=`尊贵的牛客网${person.level}级用户${person.name}您好,您已经注册牛客网${timer0(date1,date2)}天啦~`
+
+        </script>
+    </body>
+</html>

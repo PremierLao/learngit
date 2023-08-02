@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+    </head>
+    <body>
+    	<ul id="ul">
+            
+        </ul>
+        <script type="text/javascript">
+            const _createPage = (allItem, pageItem) => {
+                // 补全代码
+                var ul=document.querySelector('#ul')
+                var page=Math.floor((allItem/pageItem)+1)
+                var str=''
+                for(let i=1;i<=page;i++){
+                    str+=`<li>${i}</li>`
+                }
+                ul.innerHTML=str
+            }
+        </script>
+    </body>
+</html>
