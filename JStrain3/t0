@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        
+        <script>
+            const _flatten = arr => {
+            var str=arr.join(',').split(',')
+            console.log(str)
+            var str1=[]
+            str.forEach(element=>{
+            str1.push(parseInt(element))
+            })
+            return str1
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+    </head>
+    <body>
+    	
+        <script type="text/javascript">
+            const _isFibonacci = array => {
+                // 补全代码
+                function F(i){
+                    if(i===0){
+                        return 0;
+                    }else if(i===1){
+                        return 1;
+                    }
+                    return F(i-1)+F(i-2)                    
+                }
+                if(array.length<3){
+                    return false
+                }
+                var arr=[]
+                for(let i=0;i<10;i++){
+                    arr.push(F(i))
+                }
+                var str1=arr.join('')
+                var str2=array.join('')
+                var reg = new RegExp(str2)
+                return str1.match(reg)[0]===str2
+            }
+        </script>
+    </body>
+</html>
