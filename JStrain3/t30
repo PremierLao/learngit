@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+    </head>
+    <body>
+    	
+        <script type="text/javascript">
+            const _isPalindrome = string => {
+                let oldArr = string.split('').join()
+                let newArr = string.split('').reverse().join()
+                if (oldArr == newArr) {
+                    return true
+                }
+                return false
+                }
+            _isPalindrome('level')
+        </script>
+    </body>
+</html>
