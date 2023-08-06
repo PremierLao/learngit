@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+    </head>
+    <body>
+    	<table>
+            <thead>
+                <caption>
+                    商品
+                </caption>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>炸鸡</td>
+                    <td>28元</td>
+                    <td><button id="zjtaiduola">-</button></td>
+                    <td><span id="zjsl">0</span></td>
+                    <td><button id="zjtaishaola">+</button></td>
+                </tr>
+                <tr>
+                    <td>可乐</td>
+                    <td>5元</td>
+                    <td><button id="kltaiduola">-</button></td>
+                    <td><span id="klsl">0</span></td>
+                    <td><button id="kltaishaola">+</button></td>
+                </tr>
+                <tr>
+                    <td>总价：</td>
+                    <td><span id="total">0</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <script type="text/javascript">
+            // 补全代码
+            var addbtn1=document.querySelector('#zjtaishaola')
+            var redbtn1=document.querySelector('#zjtaiduola')
+            var addbtn2=document.querySelector('#kltaishaola')
+            var redbtn2=document.querySelector('#kltaiduola')
+            var sl1=document.querySelector('#zjsl')
+            var sl2=document.querySelector('#klsl')
+            var tol=document.querySelector('#total')
+            var zjsl=0
+            var klsl=0
+            function totall(){
+                var sum=klsl*5+zjsl*28
+                tol.innerText=sum
+            }
+            addbtn1.onclick=function(){
+                sl1.innerText=' '
+                zjsl=zjsl+1
+                sl1.innerText=zjsl
+                totall();                
+            }
+            addbtn2.onclick=function(){                
+                sl2.innerText=' '
+                klsl=klsl+1
+                sl2.innerText=klsl
+                totall();                
+            }
+            redbtn1.onclick=function(){                
+                sl1.innerText=' '
+                if(zjsl>0){
+                zjsl=zjsl-1}
+                sl1.innerText=zjsl
+                totall();                
+            }
+            redbtn2.onclick=function(){
+                sl2.innerText=' '
+                if(klsl>0){
+                klsl=klsl-1}
+                sl1.innerText=klsl
+                totall();                
+            }
+        </script>
+    </body>
+</html>

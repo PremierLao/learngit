@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+    </head>
+    <body>
+    	
+        <script type="text/javascript">
+            const _findMostType = array => {
+                let tem = {}
+                let arr = []
+                let num = 0
+                for(key of array) {
+                    let type = typeof key
+                    if(tem[type]) {
+                        tem[type] ++
+                    } else {
+                        tem[type] = 1
+                    }
+                    num = tem[type] > num ? tem[type] : num//max
+                }
+                for(key in tem) {
+                    arr = tem[key] === num ? [...arr,key] : arr
+                }
+                return [...arr,num]
+                }
+        </script>
+    </body>
+</html>
