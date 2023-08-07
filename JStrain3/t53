@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function fizzBuzz(num) {
+            if(num === null || typeof num !=='number'){return false}
+            else if(num%3===0 && num%5===0){return 'fizzbuzz'}
+            else if(num%3===0){return 'fizz'}
+            else if(num%5===0){return 'buzz'}
+            else{return num}
+}
+    </script>
+</body>
+
+</html>

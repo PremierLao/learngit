@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function makeClosures(arr, fn) {
+            let result = [];
+            for(let i=0;i<arr.length;i++){
+                let func = function(){
+                    return fn(arr[i]);
+                }
+                result.push(func);
+            }
+            return result;
+        }
+    </script>
+</body>
+
+</html>

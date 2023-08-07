@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       /* 填写样式 */
+    </style>
+</head>
+
+<body>
+    <!-- 填写标签 -->
+    <script type="text/javascript">
+        // 填写JavaScript
+        function count(start, end) {
+            console.log(start);  //立即输出第一个数
+            var timer = setInterval(()=>{
+                if(start < end){ //从start到end
+                    console.log(++start); //每次数字增幅为1
+                }else{
+                    clearInterval(timer);
+                }
+            },100)  // 100毫秒执行一次
+            return {  //返回一个包含cancel的方法
+                cancel(){
+                clearInterval(timer);
+            }}}
+    </script>
+</body>
+
+</html>

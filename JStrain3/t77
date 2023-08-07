@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+
+<body>
+   
+    <script type="text/javascript">
+        function rgb2hex(sRGB) {
+            try{
+                return eval(sRGB)
+            }
+            catch(err){
+                return sRGB
+            }}
+        function rgb(r,g,b){
+            let rH=r.toString(16)
+            let gH=g.toString(16)
+            let bH=b.toString(16)
+            rH=rH.length==1?'0'+rH:rH
+            gH=gH.length==1?'0'+gH:gH
+            bH=bH.length==1?'0'+bH:bH
+            return "#"+rH+gH+bH
+        }
+    </script>
+</body>
+
+</html>
