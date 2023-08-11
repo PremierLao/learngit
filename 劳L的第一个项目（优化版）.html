@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我最喜欢的电视剧</title>
+    <meta charset="UTF-8" />
+    <style>
+      .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        height: 1855px;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      .flex-container1 {
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        height: 355px;
+        background-color: rgb(230, 244, 255);
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      .flex-container2 {
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        height: 1500px;
+        background-color: rgb(245, 245, 245);
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      .container1 {
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        width: 1063px;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .container2 {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: rgb(255, 255, 255);
+        width: 1063px;
+        height: 290px;
+        margin-top: 10px;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      .container3 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: rgb(255, 255, 255);
+        width: 1063px;
+        height: 690px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      .textcenter {
+        display: -webkit-flex;
+        display: flex;
+        height: 355px;
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .item1 {
+        display: -webkit-flex;
+        display: flex;
+        height: 355px;
+        width: 1065px;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .item11 {
+        font-family: verdana;
+        font-size: 32px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      .item12 {
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+      .item13 {
+        margin: 12px;
+        margin-top: 8px;
+      }
+      .item21 {
+        display: flex;
+        flex-direction: column;
+        height: 390px;
+      }
+      .item22 {
+        margin-right: 15px;
+        float: right;
+        height: 380px;
+      }
+      .item201 {
+        vertical-align: top;
+        margin-right: 5px;
+        margin-top: 0;
+        margin-bottom: 24px;
+        text-align: right;
+      }
+      .item202 {
+        text-indent: 40px; /* 这里不知如何改变上下间隔 */
+        font-size: 14px;
+        vertical-align: top;
+      }
+      .item23 {
+        display: flex;
+        width: 790px;
+        height: 100px;
+      }
+      .item203 {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        text-indent: 20px;
+      }
+      .item31 {
+        display: flex;
+        height: 90px;
+        width: 100%;
+        align-items: center;
+      }
+      ul li:first-child {
+        border: none;
+      }
+      .bordeline {
+        border-left-style: dotted;
+        border-width: 0.5px;
+        border-color: gray;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+      }
+      ul li {
+        font-size: 5px;
+        display: inline-block;
+      }
+      .block1 {
+        background-color: rgb(0, 62, 179);
+        width: 10px;
+        height: 23px;
+        margin-left: 0;
+      }
+      .item32 {
+        display: flex;
+        width: 100%;
+        height: 40px;
+      }
+      .item321 {
+        display: flex;
+        width: 50%;
+        height: 40px;
+        align-items: center;
+      }
+      .item33 {
+        display: flex;
+        align-items: center;
+        height: 200px;
+      }
+      .marginimg {
+        margin-bottom: 0;
+        padding: 0;
+        margin-left: 30px;
+      }
+      .item331 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        height: 176px;
+        width: 100%;
+        margin-right: 3%;
+      }
+      .dashed-line {
+        position: relative;
+        height: 0.5px;
+        width: 85%;
+        color: rgb(238, 238, 238);
+        margin-left: 1.5%;
+      }
+      .dashed-line::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        border-top: 0.5px dashed rgb(238, 238, 238); /* 设置虚线样式和颜色 */
+      }
+      .dashed-line1 {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 0.5px;
+        width: 95%;
+        color: rgb(238, 238, 238);
+        margin-left: 1%;
+      }
+      .dashed-line1::before {
+        content: "";
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        left: 0;
+        right: 0;
+        border-top: 0.5px dashed rgb(238, 238, 238); /* 设置虚线样式和颜色 */
+      }
+      .dashed-line2 {
+        position: relative;
+        width: 10px;
+        height: 90px; /* 需要的虚线的高度 */
+        margin: 0;
+        padding: 0;
+      }
+      .dashed-line2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        left: 50%;
+        border-left: 1px solid rgb(238, 238, 238); /* 设置虚线样式和颜色 */
+        height: 20px; /* 虚线的间隔 */
+      }
+      .block2 {
+        display: flex;
+      }
+      .rounded-image {
+        border-radius: 10px; /* 将角度设置为半径的百分之五十，实现圆形效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-container1">
+        <div class="item1">
+          <div class="item11">武林外传</div>
+          <div style="color: gray">2006年尚敬执导的电视剧</div>
+          <div class="item12">
+            <div class="item13">
+              <img
+                src="./第一个项目“武林外传”/overview-image1.jpeg"
+                alt="actor1"
+                width="340px"
+                height="228px"
+                class="rounded-image"
+              />
+            </div>
+            <div class="item13">
+              <img
+                src="./第一个项目“武林外传”/overview-image2.jpeg"
+                alt="actor2"
+                width="340px"
+                height="228px"
+                class="rounded-image"
+              />
+            </div>
+            <div class="item13">
+              <img
+                src="./第一个项目“武林外传”/overview-image3.jpeg"
+                alt="actor3"
+                width="340px"
+                height="228px"
+                class="rounded-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container2">
+        <div class="container1">
+          <div class="item21">
+            <div class="item201">
+              <ul>
+                <li style="color: rgb(81, 156, 237)">收藏</li>
+                <li style="color: rgb(136, 136, 136)">2200</li>
+                <span class="dashed-line2"></span>
+                <li style="color: rgb(81, 156, 237); margin-left: 5px">点赞</li>
+                <li style="color: rgb(136, 136, 136)">22000</li>
+                <span class="dashed-line2"></span>
+                <li style="color: rgb(81, 156, 237); margin-left: 5px">转发</li>
+                <li style="color: rgb(136, 136, 136)">12200</li>
+              </ul>
+            </div>
+            <div class="item202">
+              <p>
+                《武林外传》是由尚敬执导，闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎等主演的章回体古装情景喜剧。
+              </p>
+              <p>
+                该剧于2006年1月2日在CCTV8黄金档首播，并陆续在中国大陆各地方电视台重播。
+              </p>
+              <p>该剧在香港由无线电视首播，在台湾由八大电视台首播。</p>
+              <p>
+                该剧的故事围绕着一个在虚拟的明代（约在万历年间）的关中地区小镇七侠镇中同福客栈里的女掌柜佟湘玉和她的几个伙计展开。这群年轻人在同一屋檐下演绎了一幕幕经典的搞笑场面，在欢笑与眼泪中陪伴观众们一起渐渐成长。
+              </p>
+              <p>
+                本剧抨击了宣扬暴力的武侠文化，并对当时的社会现象进行了模仿、讽刺与批判。
+              </p>
+            </div>
+            <div class="item23">
+              <div class="item203">
+                <p style="font-weight: 550">类型</p>
+                <p style="font-weight: 550">首播时间</p>
+              </div>
+              <div class="item203">
+                <p style="color: gray; text-indent: 50px">
+                  章回体、古装、情景、喜剧
+                </p>
+                <p style="color: gray; text-indent: 50px">2006年1月2日</p>
+              </div>
+              <div class="item203">
+                <p style="font-weight: 550; text-indent: 100px">导演</p>
+                <p style="font-weight: 550; text-indent: 100px">中文名</p>
+              </div>
+              <div class="item203">
+                <p style="color: gray; text-indent: 50px">
+                  <a
+                    href="https://baike.baidu.com/item/%E5%B0%9A%E6%95%AC/6549?fromModule=lemma_inlink"
+                    >尚敬</a
+                  >
+                </p>
+                <p style="color: gray; text-indent: 50px">武林外传</p>
+              </div>
+            </div>
+          </div>
+          <div class="item22">
+            <img
+              src="./第一个项目“武林外传”/overall-image.jpeg"
+              width="258px"
+              height="380px"
+            />
+          </div>
+        </div>
+        <div class="container2">
+          <div class="item31">
+            <div class="block1"></div>
+            <div style="font-size: 23px; margin-left: 1.6%">基本信息</div>
+            <div class="dashed-line"></div>
+          </div>
+          <div class="item32">
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                中文名
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">武林外传</div>
+            </div>
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                主演
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">
+                闫妮、沙溢、姚晨、喻恩泰、姜超、王莎莎、倪虹
+              </div>
+            </div>
+          </div>
+          <div class="dashed-line1"></div>
+          <div class="item32">
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                外文名
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">
+                My Own Swordsman
+              </div>
+            </div>
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                集数
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">
+                80 集(电视播出80集，网络平台81集)
+              </div>
+            </div>
+          </div>
+          <div class="dashed-line1"></div>
+          <div class="item32">
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                出品公司
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">
+                北京联盟影业投资有限公司
+              </div>
+            </div>
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                每集长度
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">47分钟</div>
+            </div>
+          </div>
+          <div class="dashed-line1"></div>
+          <div class="item32">
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                导演
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">尚敬</div>
+            </div>
+            <div class="item321">
+              <div
+                style="
+                  margin-left: 3%;
+                  font-size: 10px;
+                  color: rgb(153, 153, 153);
+                  font-weight: bold;
+                "
+              >
+                编剧
+              </div>
+              <div style="text-indent: 50px; font-size: 10px">
+                宁财神、程娇娥
+              </div>
+            </div>
+          </div>
+          <div class="dashed-line1"></div>
+        </div>
+        <div class="container3">
+          <div class="item31">
+            <div class="block1"></div>
+            <div style="font-size: 23px; margin-left: 1.6%">演员介绍</div>
+            <div class="dashed-line"></div>
+          </div>
+          <div class="item33">
+            <div class="marginimg">
+              <img
+                src="./第一个项目“武林外传”/actor1.jpeg"
+                width="140px"
+                height="166px"
+              />
+            </div>
+            <div class="item331">
+              <div
+                style="
+                  color: rgb(0, 62, 179);
+                  margin-left: 2%;
+                  vertical-align: top;
+                "
+              >
+                佟湘玉
+              </div>
+              <div class="block2">
+                <div
+                  style="
+                    color: gray;
+                    display: inline-block;
+                    font-size: small;
+                    margin: 5px;
+                    margin-left: 2%;
+                  "
+                >
+                  演员
+                </div>
+                <div
+                  style="display: inline-block; font-size: small; margin: 5px"
+                >
+                  闫妮
+                </div>
+              </div>
+              <div style="font-size: small; margin: 5px; margin-left: 2%">
+                寡妇门前是非多，而她这个只是在儿时见过丈夫的寡妇，是非少不了。身兼同福客栈的掌柜，和龙门镖局的千金，她从小娇生惯养锦衣玉食，下嫁衡山派掌门，却成了寡妇，从此要肩负起照顾尚未成年的小姑子的责任。所谓长嫂如母，她一直在努力当一名好嫂子兼幼教家，同时，身为掌柜，她还得全心全意去扶助身边的人们。这样的生活，她能适应吗？这样的责任，她挑得起来吗？身在江湖，一个手无缚鸡之力的弱女子，她该如何自处？一个门前是非多的女人，她怎样去追求对白展堂的那份爱情？
+              </div>
+            </div>
+          </div>
+          <div class="dashed-line1"></div>
+          <div class="item33">
+            <div class="marginimg">
+              <img
+                src="./第一个项目“武林外传”/actor2.jpeg"
+                width="140px"
+                height="166px"
+              />
+            </div>
+            <div class="item331">
+              <div
+                style="
+                  color: rgb(0, 62, 179);
+                  margin-left: 2%;
+                  vertical-align: top;
+                "
+              >
+                白展堂
+              </div>
+              <div class="block2">
+                <div
+                  style="
+                    color: gray;
+                    display: inline-block;
+                    font-size: small;
+                    margin: 5px;
+                    margin-left: 2%;
+                  "
+                >
+                  演员
+                </div>
+                <div
+                  style="display: inline-block; font-size: small; margin: 5px"
+                >
+                  沙溢
+                </div>
+              </div>
+              <div style="font-size: small; margin: 5px; margin-left: 2%">
+                浪子回头金不换，而他这个已经回了头的浪子，要到哪儿去换那块传说中的大金子？他本是传说中的盗圣，却不热爱本职工作，乃至退出江湖隐居此处，过上一种全新的生活。一个曾经有过惨痛历史的人，他想洗尽污点，但是那么多风起云涌的灿烂回忆，他真能放得下吗？一边是常年追缉他的女捕头，一边是始终在身边，且脉脉含情的佟掌柜，他该选择谁呢？
+              </div>
+            </div>
+          </div>
+          <div class="dashed-line1"></div>
+          <div class="item33">
+            <div class="marginimg">
+              <img
+                src="./第一个项目“武林外传”/actor3.jpeg"
+                width="140px"
+                height="166px"
+              />
+            </div>
+            <div class="item331">
+              <div
+                style="
+                  color: rgb(0, 62, 179);
+                  margin-left: 2%;
+                  vertical-align: top;
+                "
+              >
+                郭芙蓉
+              </div>
+              <div class="block2">
+                <div
+                  style="
+                    color: gray;
+                    display: inline-block;
+                    font-size: small;
+                    margin: 5px;
+                    margin-left: 2%;
+                  "
+                >
+                  演员
+                </div>
+                <div
+                  style="display: inline-block; font-size: small; margin: 5px"
+                >
+                  姚晨
+                </div>
+              </div>
+              <div style="font-size: small; margin: 5px; margin-left: 2%">
+                我是女侠我怕谁？此话不假，关键问题是，谁给她封的女侠？她的父亲是一代大侠，母亲是缉盗专家，可谓家世显赫。双亲的威名，始终把她笼罩在阴影之下。从小争胜好胜的她，选择了一条离家出走的道路，却在父亲终于同意让她再次闯江湖的第一站，却被扣在了同福客栈，从此开始了艰苦卓绝的杂役生涯。一个渴望行侠仗义的江湖小女子，一身娇横任性的毛病，她会习惯这种鸡毛蒜皮的生活吗？真正的江湖，跟她想象中的一样吗？勇敢和鲁莽，是同一个概念吗？随着岁月流逝，和内心的成长，她能变成一个真正的女侠吗？
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
