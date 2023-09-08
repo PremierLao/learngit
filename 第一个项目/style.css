@@ -1,0 +1,261 @@
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 1855px;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.flex-container1 {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 355px;
+  background-color: rgb(230, 244, 255);
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.flex-container2 {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 1500px;
+  background-color: rgb(245, 245, 245);
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 1063px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container2 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgb(255, 255, 255);
+  width: 1063px;
+  height: 290px;
+  margin-top: 10px;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.container3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgb(255, 255, 255);
+  width: 1063px;
+  height: 690px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.textcenter {
+  display: -webkit-flex;
+  display: flex;
+  height: 355px;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.item1 {
+  display: -webkit-flex;
+  display: flex;
+  height: 355px;
+  width: 1065px;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.item11 {
+  font-family: verdana;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.item12 {
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.item13 {
+  margin: 12px;
+  margin-top: 8px;
+}
+.item21 {
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+}
+.item22 {
+  margin-right: 15px;
+  float: right;
+  height: 380px;
+}
+.item201 {
+  vertical-align: top;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: right;
+}
+.item202 {
+  margin-top: 10px;
+  text-indent: 40px; /* 这里不知如何改变上下间隔 */
+  vertical-align: top;
+}
+.p1 {
+  font-size: 14px;
+  line-height: 24px;
+  text-indent: 3.5em;
+}
+
+.item23 {
+  margin-top: 50px;
+  display: flex;
+  width: 790px;
+  height: 100px;
+}
+.item203 {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-indent: 20px;
+}
+.p2 {
+  margin-top: 20px;
+}
+.item31 {
+  display: flex;
+  height: 90px;
+  width: 100%;
+  align-items: center;
+}
+ul li:first-child {
+  border: none;
+}
+.bordeline {
+  border-left-style: dotted;
+  border-width: 0.5px;
+  border-color: gray;
+}
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+ul li {
+  font-size: 5px;
+  display: inline-block;
+}
+.block1 {
+  background-color: rgb(0, 62, 179);
+  width: 10px;
+  height: 23px;
+  margin-left: 0;
+}
+.item32 {
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+.item321 {
+  display: flex;
+  width: 50%;
+  height: 40px;
+  align-items: center;
+}
+.item33 {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+.marginimg {
+  margin-bottom: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+.item331 {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 176px;
+  width: 100%;
+  margin-right: 3%;
+}
+.dashed-line {
+  position: relative;
+  height: 0.5px;
+  width: 85%;
+  color: rgb(238, 238, 238);
+  margin-left: 1.5%;
+}
+.dashed-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 0.5px dashed rgb(238, 238, 238); /* 设置虚线样式和颜色 */
+}
+.dashed-line1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 0.5px;
+  width: 95%;
+  color: rgb(238, 238, 238);
+  margin-left: 1%;
+}
+.dashed-line1::before {
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 0.5px dashed rgb(238, 238, 238); /* 设置虚线样式和颜色 */
+}
+.dashed-line2 {
+  position: relative;
+  width: 10px;
+  height: 90px; /* 需要的虚线的高度 */
+  margin: 0;
+  padding: 0;
+}
+.dashed-line2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  left: 50%;
+  border-left: 1px solid rgb(238, 238, 238); /* 设置虚线样式和颜色 */
+  height: 20px; /* 虚线的间隔 */
+}
+.block2 {
+  display: flex;
+}
+.rounded-image {
+  border-radius: 10px; /* 将角度设置为半径的百分之五十，实现圆形效果 */
+}
